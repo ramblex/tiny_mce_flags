@@ -5,10 +5,10 @@ require 'tiny_mce'
 # or any changes we make may be overwritten later
 TinyMCE.install_or_update_tinymce
 
-# Create the TinyMCE Paste Plugin. Inherit from TinyMCE::Plugin which sets a
+# Create the TinyMCE Flags Plugin. Inherit from TinyMCE::Plugin which sets a
 # default self.install method, which installs all files in self.assets_path
 # into the public/javascripts/tiny_mce directory
-class TinyMCEPaste < TinyMCE::Plugin
+class TinyMCEFlags < TinyMCE::Plugin
 
   # This lets the TinyMCE::Plugin classes install method know where to find
   # the assets we need to install. If were overwrite the self.install method
